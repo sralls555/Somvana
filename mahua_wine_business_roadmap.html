@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahua Wine Business Roadmap — Jharkhand</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amber: #C8860A;
+    --amber-light: #E8A020;
+    --amber-deep: #8B5E08;
+    --forest: #1A2B1F;
+    --forest-mid: #2E4035;
+    --cream: #F7F0E3;
+    --cream-dark: #EDE2CA;
+    --rust: #9B3A1A;
+    --gold: #D4AF37;
+    --ink: #1C1610;
+    --muted: #6B5E48;
+    --border: rgba(200,134,10,0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 80px 60px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,134,10,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: 'मह';
+    position: absolute;
+    right: 60px; top: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 220px;
+    font-weight: 700;
+    color: rgba(200,134,10,0.06);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .hero-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--amber-light);
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 62px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--cream);
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--amber-light);
+  }
+  .hero-sub {
+    font-size: 16px;
+    color: rgba(247,240,227,0.65);
+    max-width: 580px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  .hero-meta {
+    display: flex; gap: 40px; flex-wrap: wrap;
+  }
+  .meta-item { }
+  .meta-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 4px;
+  }
+  .meta-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--cream);
+  }
+
+  /* NAV */
+  .toc {
+    background: var(--forest-mid);
+    padding: 30px 60px;
+    display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+  }
+  .toc-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--amber);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  .toc a {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: rgba(247,240,227,0.5);
+    text-decoration: none;
+    padding: 4px 12px;
+    border: 1px solid rgba(200,134,10,0.2);
+    border-radius: 2px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .toc a:hover { color: var(--amber-light); border-color: var(--amber); }
+
+  /* SECTIONS */
+  .section {
+    padding: 70px 60px;
+    border-bottom: 1px solid var(--border);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .section-header {
+    display: flex; align-items: flex-start; gap: 24px;
+    margin-bottom: 40px;
+  }
+  .section-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-weight: 300;
+    color: rgba(200,134,10,0.15);
+    line-height: 0.85;
+    flex-shrink: 0;
+    margin-top: -8px;
+  }
+  .section-title-block {}
+  .section-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--forest);
+    line-height: 1.15;
+  }
+
+  /* TYPOGRAPHY */
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--forest);
+    margin: 32px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--amber-deep);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 24px 0 8px;
+  }
+  p { margin-bottom: 14px; font-size: 15px; color: #3A2F22; }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* CARDS */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin: 24px 0;
+  }
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--amber);
+    padding: 24px;
+    border-radius: 2px;
+  }
+  .card-icon { font-size: 28px; margin-bottom: 12px; }
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--forest);
+    margin-bottom: 8px;
+  }
+  .card p { font-size: 13.5px; margin: 0; }
+
+  /* TABLES */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  .styled-table thead tr {
+    background: var(--forest);
+    color: var(--cream);
+  }
+  .styled-table th {
+    padding: 12px 16px;
+    text-align: left;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .styled-table td {
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--border);
+    color: #3A2F22;
+  }
+  .styled-table tr:nth-child(even) td { background: rgba(200,134,10,0.04); }
+  .styled-table tr:last-child td { font-weight: 600; background: rgba(200,134,10,0.1); }
+
+  /* CALLOUT */
+  .callout {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 28px 32px;
+    border-left: 4px solid var(--amber);
+    margin: 24px 0;
+    border-radius: 0 2px 2px 0;
+  }
+  .callout-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--amber-light);
+    margin-bottom: 8px;
+  }
+  .callout p { color: rgba(247,240,227,0.85); margin: 0; font-size: 14px; }
+
+  .callout-warn {
+    background: #FFF8F0;
+    border-left: 4px solid var(--rust);
+  }
+  .callout-warn .callout-title { color: var(--rust); }
+  .callout-warn p { color: #4A2A1A; }
+
+  /* PHASE TIMELINE */
+  .timeline {
+    position: relative;
+    padding-left: 32px;
+    margin: 24px 0;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--amber), rgba(200,134,10,0.1));
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 32px;
+    padding: 20px 24px;
+    background: white;
+    border: 1px solid var(--border);
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -39px; top: 22px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--amber);
+    border: 3px solid var(--cream);
+    box-shadow: 0 0 0 2px var(--amber);
+  }
+  .phase-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 4px;
+  }
+  .phase-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--forest);
+    margin-bottom: 12px;
+  }
+  .phase-body { font-size: 14px; }
+  .phase-body ul { list-style: none; padding: 0; }
+  .phase-body ul li {
+    padding: 4px 0 4px 18px;
+    position: relative;
+    font-size: 14px;
+    color: #3A2F22;
+  }
+  .phase-body ul li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--amber);
+    font-size: 12px;
+  }
+
+  /* PROCESS STEPS */
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0;
+    margin: 24px 0;
+    border: 1px solid var(--border);
+  }
+  .process-step {
+    padding: 24px;
+    border-right: 1px solid var(--border);
+    position: relative;
+  }
+  .process-step:last-child { border-right: none; }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: rgba(200,134,10,0.2);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .step-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--forest);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .step-desc { font-size: 13px; color: var(--muted); margin: 0; }
+
+  /* BRAND CARD */
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .brand-card {
+    border: 1px solid var(--border);
+    padding: 24px;
+    background: white;
+  }
+  .brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--forest);
+    margin-bottom: 4px;
+  }
+  .brand-origin {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--amber);
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .brand-desc { font-size: 13.5px; margin: 0; }
+  .brand-lesson {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-size: 12.5px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* BADGE */
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    margin: 2px;
+  }
+  .badge-green { background: rgba(30,100,50,0.1); color: #1E6432; border: 1px solid rgba(30,100,50,0.2); }
+  .badge-amber { background: rgba(200,134,10,0.1); color: var(--amber-deep); border: 1px solid rgba(200,134,10,0.3); }
+  .badge-rust { background: rgba(155,58,26,0.1); color: var(--rust); border: 1px solid rgba(155,58,26,0.2); }
+
+  /* TWO COL */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0; }
+  @media(max-width:700px){ .two-col { grid-template-columns: 1fr; } }
+
+  /* CAPITAL TABLE */
+  .capital-total {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 24px 32px;
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 8px;
+  }
+  .capital-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(247,240,227,0.7);
+  }
+  .capital-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--amber-light);
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--forest);
+    color: rgba(247,240,227,0.5);
+    padding: 40px 60px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+  footer strong { color: var(--amber-light); }
+
+  ul.checklist { list-style: none; padding: 0; margin: 12px 0; }
+  ul.checklist li {
+    padding: 6px 0 6px 24px;
+    position: relative;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(200,134,10,0.08);
+    color: #3A2F22;
+  }
+  ul.checklist li::before {
+    content: '✦';
+    position: absolute; left: 0;
+    color: var(--amber);
+    font-size: 10px;
+    top: 9px;
+  }
+
+  .highlight-box {
+    border: 1px solid var(--amber);
+    background: rgba(200,134,10,0.05);
+    padding: 24px;
+    margin: 20px 0;
+  }
+  .highlight-box-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--forest);
+    margin-bottom: 12px;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">// Master Business Roadmap · 2025–2030</div>
+  <h1>Mahua Wine &<br><em>Spirit Manufacturing</em><br>Jharkhand</h1>
+  <p class="hero-sub">A complete go-to-market plan for building a premium, scalable, and culturally rooted mahua wine business from the ground up — covering law, production, supply chain, capital, branding, marketing, and global expansion.</p>
+  <div class="hero-meta">
+    <div class="meta-item">
+      <div class="meta-label">Target Market</div>
+      <div class="meta-value">India + Export</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Capital Range</div>
+      <div class="meta-value">₹6 – 12 Cr</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Timeline to Launch</div>
+      <div class="meta-value">12 – 18 Months</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Opportunity</div>
+      <div class="meta-value">Blue Ocean</div>
+    </div>
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc">
+  <span class="toc-label">Jump to:</span>
+  <a href="#s1">Legal</a>
+  <a href="#s2">Production</a>
+  <a href="#s3">Supply Chain</a>
+  <a href="#s4">Capital</a>
+  <a href="#s5">Business Plan</a>
+  <a href="#s6">Marketing</a>
+  <a href="#s7">Experts</a>
+  <a href="#s8">Sustainability</a>
+  <a href="#s9">Brand Positioning</a>
+  <a href="#s10">Jharkhand Sales</a>
+  <a href="#s11">Wine Expert GTM</a>
+  <a href="#s12">Global Players</a>
+</div>
+
+<!-- SECTION 1: LEGAL -->
+<div class="section" id="s1">
+  <div class="section-header">
+    <div class="section-num">01</div>
+    <div class="section-title-block">
+      <div class="section-tag">Foundation</div>
+      <div class="section-title">Legal Compliance &<br>Licensing Framework</div>
+    </div>
+  </div>
+
+  <div class="callout callout-warn">
+    <div class="callout-title">⚠ Critical Warning</div>
+    <p>Mahua still carries colonial-era "country liquor" classification under Jharkhand excise law. Operating without proper licenses can result in criminal prosecution. Hire a Jharkhand-based excise lawyer before spending a single rupee on setup.</p>
+  </div>
+
+  <h3>Business Entity Registration</h3>
+  <p>Register as a <strong>Private Limited Company</strong> (recommended for fundraising, investors, and scaling). File with MCA (Ministry of Corporate Affairs) at mca.gov.in. Also get: PAN, GSTIN (food & beverage category), trademark for your brand name, and a current account with a nationalized bank.</p>
+
+  <h3>Core Licenses Required (Jharkhand)</h3>
+  <table class="styled-table">
+    <thead><tr><th>License</th><th>Authority</th><th>Estimated Timeline</th><th>Approx. Cost</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Distillery/Winery License (FL-1 / Country Liquor Permit)</strong></td><td>Jharkhand Excise Dept — JELONS Portal</td><td>2–4 months</td><td>₹2–5 lakh</td></tr>
+      <tr><td><strong>Environmental Clearance</strong></td><td>SEIAA (State Environment Impact Assessment Authority)</td><td>6–8 months</td><td>₹1–2 lakh (EIA study)</td></tr>
+      <tr><td><strong>FSSAI Manufacturing License</strong></td><td>Food Safety & Standards Authority of India</td><td>1–3 months</td><td>₹7,500/year</td></tr>
+      <tr><td><strong>Consent to Establish + Operate</strong></td><td>JSPCB (Jharkhand State Pollution Control Board)</td><td>2–4 months</td><td>₹50k–2 lakh</td></tr>
+      <tr><td><strong>Factory License</strong></td><td>Labour Department, Jharkhand</td><td>1 month</td><td>₹10k–50k</td></tr>
+      <tr><td><strong>Fire Safety NOC</strong></td><td>District Fire Officer</td><td>3–4 weeks</td><td>₹5k–20k</td></tr>
+      <tr><td><strong>Udyam / MSME Registration</strong></td><td>Central Govt — udyamregistration.gov.in</td><td>1 week</td><td>Free</td></tr>
+      <tr><td><strong>BIS Certification (IS 14230)</strong></td><td>Bureau of Indian Standards (for bottled wine)</td><td>2–4 months</td><td>₹50k–1 lakh</td></tr>
+      <tr><td><strong>Export Licence (if targeting export)</strong></td><td>DGFT + APEDA Registration</td><td>1–2 months</td><td>₹10k–50k</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Key Jharkhand-Specific Rules</h3>
+  <ul class="checklist">
+    <li><strong>JSBCL Mandatory Channel:</strong> All retail distribution of alcohol in Jharkhand must pass through Jharkhand State Beverages Corporation Limited. You cannot sell directly to shops without JSBCL registration.</li>
+    <li><strong>Tribal Area Restrictions:</strong> Liquor establishments are prohibited in areas where Scheduled Tribe population exceeds 50%. Factor this in while selecting your plant location.</li>
+    <li><strong>Tribal Harvesting Rights:</strong> Only tribal communities are legally permitted to collect mahua flowers from forests under the Forest Rights Act. Structure your procurement as a formal purchase agreement with tribals/FPOs — not direct harvesting by your company.</li>
+    <li><strong>IMFL vs Country Liquor Classification:</strong> Getting mahua classified as IMFL (Indian Made Foreign Liquor) rather than Country Liquor significantly expands your market access and removes social stigma. DesmondJi (Desmondji brand) pioneered this route in 2018 — study their legal path carefully.</li>
+    <li><strong>Label Registration:</strong> Every SKU label must be approved by the Jharkhand Excise Department before sale. Allow 4–8 weeks per label.</li>
+  </ul>
+
+  <div class="callout">
+    <div class="callout-title">💡 Expert Tip</div>
+    <p>Apply for Environmental Clearance on Day 1 — it's the longest-lead item (6–8 months). All other licenses can be pursued in parallel. Missing this single step causes the most startup delays in distillery projects across India.</p>
+  </div>
+</div>
+
+<!-- SECTION 2: PRODUCTION -->
+<div class="section" id="s2">
+  <div class="section-header">
+    <div class="section-num">02</div>
+    <div class="section-title-block">
+      <div class="section-tag">The Craft</div>
+      <div class="section-title">Mahua Wine Production Process<br>— Commercial Scale</div>
+    </div>
+  </div>
+
+  <p><strong>The mahua flower</strong> (Madhuca longifolia) contains 40–70% natural sugars in dry weight — one of the highest of any flower on Earth. This is what makes it the perfect fermentation substrate. The commercial process differs significantly from traditional village brewing.</p>
+
+  <h3>Raw Material Specs</h3>
+  <div class="two-col">
+    <div class="highlight-box">
+      <div class="highlight-box-title">Flower Harvest Window</div>
+      <ul class="checklist">
+        <li>Flowering season: <strong>March – May</strong></li>
+        <li>Peak collection: <strong>15–20 days</strong> (late March/early April)</li>
+        <li>Flowers must be collected from the ground — not plucked</li>
+        <li>Average yield: 50 kg of flowers per tree per season</li>
+        <li>Ethanol yield: <strong>300–400 ml per kg</strong> of dried flowers</li>
+        <li>Fresh flowers: 75–80% moisture content</li>
+      </ul>
+    </div>
+    <div class="highlight-box">
+      <div class="highlight-box-title">Quality Grades (Commercial)</div>
+      <ul class="checklist">
+        <li><strong>Grade A (Premium):</strong> Freshly dried, golden colour, no mold — for wine and premium spirit</li>
+        <li><strong>Grade B (Standard):</strong> Slightly oxidized, usable for distillation</li>
+        <li><strong>Grade C (Industrial):</strong> For bioethanol only — not for consumable wine</li>
+        <li>Post-harvest processing within 24 hrs is critical for Grade A</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Step-by-Step Wine Production Process</h3>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Receiving & Sorting</div>
+      <p class="step-desc">Receive flowers from tribal collectors. Hand-sort to remove diseased/damaged flowers. Weigh and log batch details.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Cleaning & Drying</div>
+      <p class="step-desc">Wash fresh flowers. Sun-dry or use forced-air dryers to reduce moisture to 12–15%. Store in gunny bags in cool, dry warehouses.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Crushing & Must Prep</div>
+      <p class="step-desc">Use a worm-screw crusher or hydraulic wine press. Dilute 1:5 (flower to water). Add 5L fruit juice (litchi or grape) per batch for complexity.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Sulfiting & Enzyme Treatment</div>
+      <p class="step-desc">Add Campden tablets (potassium metabisulfite) to neutralize wild yeast/mold. Add pectinase enzyme. Rest 24 hours.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">05</div>
+      <div class="step-title">Primary Fermentation</div>
+      <p class="step-desc">Add S. cerevisiae NCIM 3215 (optimal strain per research). Add yeast nutrients + tartaric acid to maintain pH 4.5. Ferment at 30°C for 7–10 days.</p>
+    </div>
+  </div>
+  <div class="process-steps" style="margin-top:0;border-top:none;">
+    <div class="process-step">
+      <div class="step-num">06</div>
+      <div class="step-title">Straining & Racking</div>
+      <p class="step-desc">After 4 days of stirring, strain solids. Transfer to stainless steel secondary fermentation tanks with airlocks.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">07</div>
+      <div class="step-title">Secondary Fermentation</div>
+      <p class="step-desc">Allow 30 days in secondary. Target alcohol: 10–14% ABV for wine. 20–40% ABV if continuing to distillation for spirit.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">08</div>
+      <div class="step-title">Stabilization & Fining</div>
+      <p class="step-desc">Add wine stabilizers to arrest fermentation. Bentonite fining to clarify. Back-sweeten to 5–10% residual sugar for floral balance.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">09</div>
+      <div class="step-title">Filtration & QC</div>
+      <p class="step-desc">Plate-and-frame filtration. Test for: pH, Brix, titratable acidity, alcohol%, volatile acidity, and sulphite levels. Full sensory panel evaluation.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">10</div>
+      <div class="step-title">Bottling & Packaging</div>
+      <p class="step-desc">Bottle at 750ml / 375ml. Apply FSSAI-approved, Excise Dept-cleared labels. Apply holographic excise stamps. Box and case for distribution.</p>
+    </div>
+  </div>
+
+  <h3>For Premium Spirit / Double Distillation Line</h3>
+  <p>After Step 7 (secondary fermentation), the wash (fermented liquid) is transferred to <strong>copper pot stills</strong> for distillation. First distillation ("stripping run") brings ABV to ~25–30%. Second distillation ("spirit run") produces a clean 50–65% ABV new-make spirit. This is then diluted to bottling strength (40–45% ABV) and optionally aged in oak casks. <strong>Platinum filtration</strong> (as used by Six Brothers) adds premium smoothness and clarity.</p>
+
+  <h3>Key Equipment List (Mid-Scale Plant)</h3>
+  <table class="styled-table">
+    <thead><tr><th>Equipment</th><th>Purpose</th><th>Approx. Cost</th></tr></thead>
+    <tbody>
+      <tr><td>Stainless Steel Fermentation Tanks (5,000–10,000L)</td><td>Primary & secondary fermentation</td><td>₹15–30 lakh</td></tr>
+      <tr><td>Worm Screw Crusher / Hydraulic Press</td><td>Flower crushing</td><td>₹3–8 lakh</td></tr>
+      <tr><td>Copper Pot Still (if making spirit)</td><td>Distillation</td><td>₹20–50 lakh</td></tr>
+      <tr><td>Plate-and-Frame Filter</td><td>Clarification</td><td>₹4–8 lakh</td></tr>
+      <tr><td>Bottling Line (semi-automatic)</td><td>Fill, cork, capsule, label</td><td>₹10–25 lakh</td></tr>
+      <tr><td>Cold Storage / Drying Room</td><td>Flower preservation</td><td>₹8–15 lakh</td></tr>
+      <tr><td>ETP (Effluent Treatment Plant)</td><td>Mandatory for pollution NOC</td><td>₹10–20 lakh</td></tr>
+      <tr><td>Laboratory QC Equipment</td><td>Testing pH, Brix, alcohol, acidity</td><td>₹5–10 lakh</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 3: SUPPLY CHAIN -->
+<div class="section" id="s3">
+  <div class="section-header">
+    <div class="section-num">03</div>
+    <div class="section-title-block">
+      <div class="section-tag">Operations</div>
+      <div class="section-title">Stabilizing the Supply Chain</div>
+    </div>
+  </div>
+
+  <div class="callout callout-warn">
+    <div class="callout-title">⚠ Biggest Operational Risk</div>
+    <p>The mahua harvest window is only 15–20 days per year (March–April). If your supply chain fails during this window, your entire year's production is at risk. Build supply chain redundancy BEFORE you build your plant.</p>
+  </div>
+
+  <h3>Raw Material Supply Architecture</h3>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🌳</div>
+      <div class="card-title">Tier 1 — Tribal FPO Partnerships</div>
+      <p>Partner with <strong>Farmer Producer Organizations (FPOs)</strong> in Khunti, Gumla, West Singhbhum, Simdega, and Lohardaga. Sign multi-year MoUs guaranteeing minimum price + 10–15% premium over MSP. This ensures volume commitment and ethical sourcing.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <div class="card-title">Tier 2 — Self-Help Group Network</div>
+      <p>Partner with <strong>Women's SHGs (Mahila Samitis)</strong> in villages for direct flower collection. Provide SHGs with proper drying racks, gunny bags, moisture meters, and collection incentives. Reduces middlemen and increases your cost advantage.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏦</div>
+      <div class="card-title">Tier 3 — JSFCL / Van Dhan</div>
+      <p>Register with <strong>Jharkhand State Forest Corporation</strong> and TRIFED's Van Dhan program. These government bodies aggregate tribal forest produce and can supply large quantities at regulated prices during peak harvest.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📦</div>
+      <div class="card-title">Buffer Stock Strategy</div>
+      <p>Build a <strong>minimum 3-month production buffer</strong> of dried mahua in your warehouse after each harvest. Invest in a proper cold storage + low-humidity drying room. Rotate FIFO (first-in-first-out) for quality preservation.</p>
+    </div>
+  </div>
+
+  <h3>Post-Harvest Quality Control at Source</h3>
+  <ul class="checklist">
+    <li>Station a <strong>quality supervisor in each village cluster</strong> during the 20-day harvest window — pay them ₹500/day. This is the most cost-effective quality investment you can make.</li>
+    <li>Provide tribal collectors with <strong>plastic trays (not gunny bags)</strong> for initial collection to prevent bruising and soil contamination.</li>
+    <li>Deploy <strong>mechanical forced-air dryers</strong> at collection points — sun-drying alone causes inconsistent moisture and mold. Target 12–15% final moisture.</li>
+    <li>Create a <strong>Mahua Collection App</strong> (basic Android) for real-time tracking of collection volumes, location, quality grade, and price calculation.</li>
+    <li>Set up a <strong>weighbridge and moisture meter</strong> at your factory gate — reject any consignment above 20% moisture or with visible mold.</li>
+  </ul>
+
+  <h3>Other Input Supply Chains</h3>
+  <table class="styled-table">
+    <thead><tr><th>Input</th><th>Supplier Type</th><th>Annual Requirement (Mid-Scale)</th></tr></thead>
+    <tbody>
+      <tr><td>Mahua Flowers (dried)</td><td>Tribal FPOs + JSFCL</td><td>50–100 MT</td></tr>
+      <tr><td>Wine Yeast (S. cerevisiae NCIM 3215)</td><td>NCIM Pune / Lalvin (France)</td><td>50–100 kg</td></tr>
+      <tr><td>Sugar / Dextrose</td><td>Local wholesale</td><td>5–10 MT</td></tr>
+      <tr><td>Potassium Metabisulfite (Campden)</td><td>Chemical supplier (Mumbai/Kolkata)</td><td>100–200 kg</td></tr>
+      <tr><td>Glass Bottles (750ml)</td><td>Hindusthan National Glass / AGI Glaspac</td><td>50,000–100,000 units</td></tr>
+      <tr><td>Corks / Capsules / Labels</td><td>Print + cork vendors (Pune/Delhi)</td><td>Per bottle</td></tr>
+      <tr><td>Fruit Juice (litchi/grape concentrate)</td><td>Local/regional food processor</td><td>2,000–5,000 L</td></tr>
+      <tr><td>Process Water</td><td>Bore well + municipal</td><td>~50 KLPD</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 4: CAPITAL -->
+<div class="section" id="s4">
+  <div class="section-header">
+    <div class="section-num">04</div>
+    <div class="section-title-block">
+      <div class="section-tag">Finance</div>
+      <div class="section-title">Capital Required &<br>Funding Sources</div>
+    </div>
+  </div>
+
+  <h3>Capital Requirement Breakdown</h3>
+  <table class="styled-table">
+    <thead><tr><th>Category</th><th>Conservative</th><th>Mid-Scale (Recommended)</th><th>Premium Scale</th></tr></thead>
+    <tbody>
+      <tr><td>Company formation + legal + IP</td><td>₹5 lakh</td><td>₹10 lakh</td><td>₹20 lakh</td></tr>
+      <tr><td>Licensing & government clearances</td><td>₹50 lakh</td><td>₹80 lakh</td><td>₹1.2 Cr</td></tr>
+      <tr><td>Land (lease 5 years / purchase)</td><td>₹30 lakh</td><td>₹75 lakh</td><td>₹2 Cr</td></tr>
+      <tr><td>Civil construction (factory, storage, lab)</td><td>₹80 lakh</td><td>₹1.5 Cr</td><td>₹3 Cr</td></tr>
+      <tr><td>Machinery & equipment</td><td>₹1 Cr</td><td>₹2 Cr</td><td>₹4 Cr</td></tr>
+      <tr><td>ETP + Utility + power (generator)</td><td>₹25 lakh</td><td>₹50 lakh</td><td>₹80 lakh</td></tr>
+      <tr><td>Raw material (first season stock)</td><td>₹30 lakh</td><td>₹60 lakh</td><td>₹1 Cr</td></tr>
+      <tr><td>Branding + packaging + design</td><td>₹20 lakh</td><td>₹50 lakh</td><td>₹1.5 Cr</td></tr>
+      <tr><td>Working capital (18 months runway)</td><td>₹70 lakh</td><td>₹1.5 Cr</td><td>₹3 Cr</td></tr>
+      <tr><td><strong>TOTAL</strong></td><td><strong>~₹4 Cr</strong></td><td><strong>~₹8 Cr</strong></td><td><strong>~₹17 Cr</strong></td></tr>
+    </tbody>
+  </table>
+
+  <div class="capital-total">
+    <div class="capital-label">Recommended Target Capital (Mid-Scale Launch)</div>
+    <div class="capital-amount">₹8 – 10 Crore</div>
+  </div>
+
+  <h3>Funding Sources (Stack These Together)</h3>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🏛️</div>
+      <div class="card-title">Government Schemes</div>
+      <p><strong>NABARD:</strong> Agro-processing unit loans up to ₹2 Cr at subsidized rates.<br><strong>MSME Ministry:</strong> Credit Guarantee Fund — up to ₹2 Cr collateral-free.<br><strong>Jharkhand MSME Policy:</strong> Capital subsidy of 15–25% on machinery investment.<br><strong>TRIFED / Van Dhan:</strong> Grants for tribal forest produce enterprises.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏦</div>
+      <div class="card-title">Term Loans</div>
+      <p>State Bank of India, Bank of Baroda, or Jharkhand Rajya Gramin Bank for project term loans. Require a formal <strong>Detailed Project Report (DPR)</strong>. Loan-to-project cost typically 60–70%, so you need 30–40% equity first.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">👼</div>
+      <div class="card-title">Angel Investors / VCs</div>
+      <p>Target investors interested in: <strong>craft beverages, tribal economy, India's cultural heritage, or sustainable agriculture</strong>. Platforms: LetsVenture, AngelList India, Indian Angel Network. A compelling story + unique product = strong pitch.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌱</div>
+      <div class="card-title">Impact Funding</div>
+      <p><strong>Asha Impact, Aavishkaar, Acumen India</strong> — all fund tribal livelihood + sustainable agriculture businesses. If you structure your business with tribal equity participation, impact investors become a natural fit.</p>
+    </div>
+  </div>
+
+  <h3>Unit Economics (Per Case of 12 × 750ml)</h3>
+  <table class="styled-table">
+    <thead><tr><th>Item</th><th>Cost (Wine)</th><th>Cost (Premium Spirit)</th></tr></thead>
+    <tbody>
+      <tr><td>Raw material (mahua flowers)</td><td>₹180</td><td>₹360</td></tr>
+      <tr><td>Packaging (bottle, cork, label, box)</td><td>₹480</td><td>₹900</td></tr>
+      <tr><td>Processing + utilities + labour</td><td>₹240</td><td>₹480</td></tr>
+      <tr><td>Excise duty (Jharkhand — ~150–200%)</td><td>₹600–800</td><td>₹1,200–1,600</td></tr>
+      <tr><td>Total COGS per case</td><td>₹1,500–1,700</td><td>₹3,000–3,400</td></tr>
+      <tr><td>Ex-factory price (to JSBCL)</td><td>₹2,400–2,800</td><td>₹5,000–7,000</td></tr>
+      <tr><td><strong>MRP per bottle (consumer)</strong></td><td><strong>₹400–600</strong></td><td><strong>₹1,500–3,000</strong></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 5: BUSINESS PLAN -->
+<div class="section" id="s5">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <div class="section-title-block">
+      <div class="section-tag">Strategy</div>
+      <div class="section-title">Business Plan &<br>Phase-by-Phase Roadmap</div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="phase-tag">Phase 1 · Months 1–4</div>
+      <div class="phase-title">Foundation & Legal Setup</div>
+      <div class="phase-body">
+        <ul>
+          <li>Incorporate Private Limited Company; file PAN, GST, trademark</li>
+          <li>Hire excise lawyer + CA + project consultant</li>
+          <li>Commission Detailed Project Report (DPR) — mandatory for bank loans</li>
+          <li>File for Environmental Clearance (SEIAA) — longest-lead item</li>
+          <li>Begin land identification in mahua-rich districts (Khunti, Gumla, Simdega)</li>
+          <li>Start tribal FPO relationship-building — attend village festivals during mahua season</li>
+          <li>Commission brand name research + trademark filing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="phase-tag">Phase 2 · Months 3–10</div>
+      <div class="phase-title">Licensing & Site Acquisition</div>
+      <div class="phase-body">
+        <ul>
+          <li>Finalize and purchase/lease land (1.5–2 acres minimum)</li>
+          <li>Apply for Distillery License via JELONS portal</li>
+          <li>File FSSAI Manufacturing License application</li>
+          <li>Apply for JSPCB Consent to Establish</li>
+          <li>Secure bank term loan sanction — present DPR to bank</li>
+          <li>Begin civil engineering design of factory + ETP</li>
+          <li>Sign MoUs with 3–5 tribal FPOs in Khunti and Gumla districts</li>
+          <li>Order long-lead equipment: fermentation tanks, bottling line, copper pot still</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="phase-tag">Phase 3 · Months 8–16</div>
+      <div class="phase-title">Construction & Pilot Production</div>
+      <div class="phase-body">
+        <ul>
+          <li>Complete factory construction: production hall, warehouse, cold storage, lab, ETP</li>
+          <li>Install and commission all equipment with equipment supplier's engineers</li>
+          <li>Hire and train production team: winemaster/head brewer, QC technician, floor workers</li>
+          <li>First harvest procurement campaign (March–April window)</li>
+          <li>Run 3–5 pilot batches — refine recipe, optimize fermentation parameters</li>
+          <li>Submit samples to accredited lab for FSSAI compliance testing</li>
+          <li>Finalize brand identity: name, logo, label design, bottle shape, brand story</li>
+          <li>Register labels with Jharkhand Excise Department</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="phase-tag">Phase 4 · Months 14–20</div>
+      <div class="phase-title">Commercial Launch — Jharkhand First</div>
+      <div class="phase-body">
+        <ul>
+          <li>Register with JSBCL as approved vendor — complete all paperwork before first batch</li>
+          <li>Launch first commercial batch (500–1,000 cases initially)</li>
+          <li>Soft launch events in Ranchi — target hotels, restaurants, cultural venues</li>
+          <li>Digital brand launch: website, Instagram, YouTube brand film</li>
+          <li>Apply for adjacent state excise approvals (Odisha, Chhattisgarh, West Bengal)</li>
+          <li>Begin pitching to premium bars and restaurants in Delhi and Mumbai</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="phase-tag">Phase 5 · Year 2–3</div>
+      <div class="phase-title">Scale, Export & Category Leadership</div>
+      <div class="phase-body">
+        <ul>
+          <li>Expand production capacity to 2–3x first year volume</li>
+          <li>Enter premium markets: Delhi, Mumbai, Bengaluru, Hyderabad, Goa</li>
+          <li>File for GI Tag for Jharkhand Mahua with GI Registry, Chennai</li>
+          <li>Register with APEDA for export; target UK, USA, Singapore, UAE Indian diaspora markets</li>
+          <li>Launch aged expression (12-month oak-barrel variant) as super-premium SKU</li>
+          <li>Explore Series A funding for national and export expansion</li>
+          <li>Consider setting up a heritage distillery experience/tourism element at plant</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 6: MARKETING -->
+<div class="section" id="s6">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <div class="section-title-block">
+      <div class="section-tag">Growth</div>
+      <div class="section-title">Marketing Strategy —<br>Digital + On-Ground</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">🎯 Core Marketing Philosophy</div>
+    <p>You are not marketing alcohol. You are marketing a 5,000-year-old Indian story. Every marketing touchpoint — digital or physical — must make the consumer feel they are choosing India's own heritage over imported spirits. This is your unfair advantage.</p>
+  </div>
+
+  <h3>Digital Marketing Playbook</h3>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">📸</div>
+      <div class="card-title">Instagram / Meta</div>
+      <p><strong>Primary platform.</strong> Post: tribal collector stories, forest visuals, the science of mahua, cocktail recipes, behind-the-scenes distillery content. Target: urban millennials 25–40, foodie & travel community. Budget: ₹30–50k/month in paid campaigns. Use Instagram Reels heavily — cocktail demos go viral.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎬</div>
+      <div class="card-title">YouTube Brand Film</div>
+      <p>Invest ₹5–10 lakh in a <strong>cinematic brand documentary</strong> (8–12 minutes): follow a tribal family through the mahua harvest → your factory → a glass in a Mumbai bar. This is your most powerful long-term asset. Post on YouTube + send to media.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <div class="card-title">Influencer Strategy</div>
+      <p>Target: <strong>food & beverage creators</strong> (not lifestyle celebrities). Specifically chase: craft spirit reviewers, India travel bloggers, tribal culture advocates. Nano and micro influencers (10k–100k followers) in cocktail, food and travel niches outperform celebrities for credibility.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">✍️</div>
+      <div class="card-title">Content Marketing (SEO)</div>
+      <p>Build a blog covering: "What is Mahua," "Mahua cocktail recipes," "Jharkhand tribal culture," "India's indigenous spirits." These rank organically and drive premium brand perception. Target keywords where you can become the <strong>No. 1 result on Google</strong> — there is almost no competition yet.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📧</div>
+      <div class="card-title">D2C Email Community</div>
+      <p>Build an email subscriber list from Day 1. Share: distillery updates, harvest stories, cocktail guides, limited edition releases. This becomes your <strong>direct sales channel</strong> as regulations evolve. Target: 10,000 subscribers by end of Year 1.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌐</div>
+      <div class="card-title">LinkedIn + PR</div>
+      <p>The <strong>Mahua story IS a PR story</strong>. Pitch to: Hindustan Times, Times of India, Forbes India, Condé Nast Traveller, BBC India, Quartz. The narrative of "colonial-era banned flower becomes India's premium spirit" writes itself. One good feature = ₹50 lakh worth of advertising reach.</p>
+    </div>
+  </div>
+
+  <h3>On-Ground Marketing (Never Ignore This)</h3>
+  <ul class="checklist">
+    <li><strong>Ranchi Launch Event:</strong> Host a curated Mahua Tasting Evening at a premium hotel (Radisson, Hotel BNR Chanakya). Invite journalists, bureaucrats, hoteliers, restaurateurs. Budget ₹3–5 lakh. This creates earned media and trade buy-in simultaneously.</li>
+    <li><strong>Mahua Festival Activation:</strong> Participate in or co-create tribal cultural festivals (Sarhul, Karma festivals). Setup a branded stall. Give free tastings. This builds grassroots credibility.</li>
+    <li><strong>Bar Takeover Nights:</strong> Partner with top bars in Ranchi, then metros. A "Mahua Night" where your product is the hero of 5–6 cocktails creates lasting bartender relationships — bartenders are your most powerful brand ambassadors.</li>
+    <li><strong>Gifting B2B:</strong> Position Mahua as the ultimate premium corporate gift. Approach large corporates in Jharkhand (Tata Steel, SAIL, JSPL) for Diwali/New Year gifting. Custom-labelled gift boxes of 2 bottles. High-margin, high-visibility channel.</li>
+    <li><strong>Distillery Tourism:</strong> Once operational, run weekend distillery tours (₹500–1,000 per person). Include: forest walk, fermentation demo, tasting of 3 expressions. Creates brand loyalists and generates Instagram content organically.</li>
+  </ul>
+
+  <h3>Marketing Budget (Year 1)</h3>
+  <table class="styled-table">
+    <thead><tr><th>Channel</th><th>Monthly</th><th>Annual</th></tr></thead>
+    <tbody>
+      <tr><td>Digital ads (Meta, Google)</td><td>₹40,000</td><td>₹4.8 lakh</td></tr>
+      <tr><td>Influencer partnerships</td><td>₹30,000</td><td>₹3.6 lakh</td></tr>
+      <tr><td>Content creation (photography, video)</td><td>₹25,000</td><td>₹3 lakh</td></tr>
+      <tr><td>PR agency (Ranchi + national)</td><td>₹50,000</td><td>₹6 lakh</td></tr>
+      <tr><td>Events & activations</td><td>₹40,000</td><td>₹4.8 lakh</td></tr>
+      <tr><td>Trade marketing (samples, POS)</td><td>₹20,000</td><td>₹2.4 lakh</td></tr>
+      <tr><td>Brand film (one-time)</td><td>—</td><td>₹7 lakh</td></tr>
+      <tr><td><strong>Total Year 1</strong></td><td><strong>~₹2 lakh</strong></td><td><strong>~₹31.6 lakh</strong></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 7: EXPERTS -->
+<div class="section" id="s7">
+  <div class="section-header">
+    <div class="section-num">07</div>
+    <div class="section-title-block">
+      <div class="section-tag">Team</div>
+      <div class="section-title">Subject Matter Experts<br>You Must Hire or Consult</div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🍷</div>
+      <div class="card-title">Head Winemaster / Fermentation Expert</div>
+      <p>Someone with formal training in enology (winemaking) or food fermentation technology. Look at graduates from: <strong>IIFPT Thanjavur, CFTRI Mysuru, Sam Higginbottom University Allahabad (Agra), or international wine schools</strong>. Salary: ₹8–15 lakh/year.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚖️</div>
+      <div class="card-title">Jharkhand Excise Lawyer</div>
+      <p>Non-negotiable. Must have handled liquor licensing in Jharkhand specifically. Contact the <strong>Jharkhand Bar Council</strong> or ask FICCI/CII Jharkhand chapter for referrals. This person will save you years of compliance headaches.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌿</div>
+      <div class="card-title">Tribal Liaison / Community Manager</div>
+      <p>Someone trusted by tribal communities — ideally a person from the community or an NGO professional. This role manages FPO relationships, ensures ethical procurement, and prevents supply chain disruption.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔬</div>
+      <div class="card-title">Food Technologist / QC Manager</div>
+      <p>For FSSAI compliance, lab testing, and quality consistency. Graduate from a food technology institute. Must understand: microbiological testing, chemical analysis of alcoholic beverages, and HACCP food safety systems.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <div class="card-title">Chartered Accountant (Excise Specialist)</div>
+      <p>Alcohol taxation in India is extraordinarily complex — state excise duty, GST, cess, and interplay between them. A CA with <strong>beverage industry experience</strong> is essential. Mistake in excise calculations = massive penalties.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎨</div>
+      <div class="card-title">Brand Designer / Storyteller</div>
+      <p>Your brand is your single most important asset. Hire a <strong>senior brand designer with luxury/premium consumer goods experience</strong>. Not a local printer. Consider boutique brand studios like: Elephant Design (Pune), Superscript (Bengaluru), or Ray+Keshavan.</p>
+    </div>
+  </div>
+
+  <h3>Key Consultants to Contact Now</h3>
+  <ul class="checklist">
+    <li><strong>Ankur Aggarwal (Arishtam, Uttarakhand):</strong> IIT-IIM trained fermentation expert, India's most accessible mahua consultant, founded India's first fermentation beverage incubation lab. Website: arishtam.com</li>
+    <li><strong>Desmond Nazareth (DesmondJi):</strong> The man who got mahua classified as IMFL in India. His journey and legal path is the single most important case study for you. Connect via LinkedIn or his website.</li>
+    <li><strong>CFTRI, Mysuru:</strong> Central Food Technological Research Institute — they have published research on mahua wine and can provide technical consulting and lab testing services.</li>
+    <li><strong>TRIFED (Tribal Cooperative Marketing Development Federation):</strong> Government body that supports tribal forest produce businesses. Excellent source of guidance on procurement, FPO linkages, and grants.</li>
+    <li><strong>NABARD Jharkhand Regional Office, Ranchi:</strong> For agri-processing project financing and scheme guidance. Visit their office early in your journey.</li>
+  </ul>
+</div>
+
+<!-- SECTION 8: SUSTAINABILITY -->
+<div class="section" id="s8">
+  <div class="section-header">
+    <div class="section-num">08</div>
+    <div class="section-title-block">
+      <div class="section-tag">Future-Proofing</div>
+      <div class="section-title">Sustainability Plan</div>
+    </div>
+  </div>
+
+  <p>A sustainability plan is not just an ethical obligation — in the premium beverage world of 2025, it is a <strong>commercial necessity</strong>. ESG-conscious investors, international buyers, and urban millennial consumers demand it. Build it into your DNA from Day 1.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🌳</div>
+      <div class="card-title">Forest Conservation Commitment</div>
+      <p>Pledge to plant <strong>1 new mahua tree for every 10 trees harvested from.</strong> Partner with Jharkhand Forest Department under the CAMPA (Compensatory Afforestation) scheme. This creates a long-term raw material security while protecting biodiversity.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💧</div>
+      <div class="card-title">Water Stewardship</div>
+      <p>Install a complete <strong>Effluent Treatment Plant (ETP)</strong> and a rainwater harvesting system. Target <strong>zero liquid discharge (ZLD)</strong> status — treated water is reused in cooling, flushing, and horticulture. This is a legal requirement and a brand asset.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <div class="card-title">Renewable Energy</div>
+      <p>Install <strong>rooftop solar panels</strong> to power 30–50% of factory energy. Biogas from ETP sludge can power boilers. Apply for Jharkhand's solar subsidy scheme (JREDA). This reduces operational cost by ₹5–10 lakh/year and is a powerful brand story.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">♻️</div>
+      <div class="card-title">Waste-to-Value</div>
+      <p>Mahua press cake (after flower crushing) is <strong>high-protein cattle feed</strong> — sell to local dairy farmers. Fermentation lees can be composted and sold as agricultural fertilizer. Nothing from your process needs to go to landfill.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧑‍🤝‍🧑</div>
+      <div class="card-title">Tribal Equity Participation</div>
+      <p>Consider giving your top tribal FPO partners a <strong>2–5% equity stake</strong> or a profit-sharing arrangement. This is the most powerful sustainability tool: it aligns incentives, creates loyal suppliers, and is an extraordinary story for investors and media.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📦</div>
+      <div class="card-title">Sustainable Packaging</div>
+      <p>Use <strong>recycled glass bottles</strong> (minimum 30% recycled content). Natural cork closures (not plastic). Labels printed on recycled paper with soy-based inks. Outer boxes in FSC-certified cardboard. By Year 2, target: <strong>B Corp certification</strong> or equivalent.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">💡 Sustainability as Revenue</div>
+    <p>Sustainability is not a cost centre — it is a revenue driver. Premium international buyers pay 20–30% more for verified sustainable products. Impact investors fund it. Media covers it. Build sustainability into your cost model from Day 1, not as an afterthought.</p>
+  </div>
+</div>
+
+<!-- SECTION 9: BRAND POSITIONING -->
+<div class="section" id="s9">
+  <div class="section-header">
+    <div class="section-num">09</div>
+    <div class="section-title-block">
+      <div class="section-tag">Identity</div>
+      <div class="section-title">Brand Positioning —<br>The Right Approach</div>
+    </div>
+  </div>
+
+  <div class="callout callout-warn">
+    <div class="callout-title">❌ What NOT to Do</div>
+    <p>Do NOT position as "local herbal country liquor." That's the path to low margins, no export potential, and zero premium. The entire global craft spirits revolution — feni, mezcal, baijiu, sake — shows the opposite direction. Heritage + premium = winning formula.</p>
+  </div>
+
+  <h3>The Correct Positioning Framework</h3>
+  <p>Study how Mexico took <strong>Tequila</strong> from a "peasant drink" to a global $12 billion category. Study how Scotland protected <strong>Scotch Whisky</strong> through GI and premium storytelling. This is exactly the playbook available to you with Mahua. You are not making a local drink — you are building <strong>India's first global heritage spirit category.</strong></p>
+
+  <div class="two-col">
+    <div class="highlight-box">
+      <div class="highlight-box-title">Positioning: Premium Heritage Spirit</div>
+      <ul class="checklist">
+        <li>"India's only flower-based spirit" (globally unique)</li>
+        <li>5,000 years of tribal tradition in a bottle</li>
+        <li>The Indian answer to Tequila / Mezcal</li>
+        <li>Forest-to-bottle: fully traceable supply chain</li>
+        <li>Tribal empowerment embedded in the product</li>
+        <li>The GI-protected spirit that represents Jharkhand</li>
+      </ul>
+    </div>
+    <div class="highlight-box">
+      <div class="highlight-box-title">Brand Personality</div>
+      <ul class="checklist">
+        <li><strong>Tone:</strong> Proud, warm, rooted, confident — not defensive or niche</li>
+        <li><strong>Visual:</strong> Earth tones, tribal art motifs, premium typography</li>
+        <li><strong>Language:</strong> In Hindi AND English — proudly bilingual</li>
+        <li><strong>Enemy:</strong> Imported spirits with no Indian story</li>
+        <li><strong>Allies:</strong> Tribal communities, forest, Indian culture</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>SKU Architecture (What to Launch)</h3>
+  <table class="styled-table">
+    <thead><tr><th>SKU</th><th>Description</th><th>Target MRP</th><th>Target Consumer</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Mahua Classic Wine</strong></td><td>10–13% ABV, lightly sweet, floral, fruit-forward. Entry point to the category.</td><td>₹350–500 / 750ml</td><td>Wine drinkers, curious millennials</td></tr>
+      <tr><td><strong>Mahua White Spirit</strong></td><td>40–45% ABV, single distilled, unaged. Clear, aromatic. "India's Tequila" positioning.</td><td>₹800–1,200 / 750ml</td><td>Cocktail bars, adventurous spirits drinkers</td></tr>
+      <tr><td><strong>Mahua Reserve</strong></td><td>Double distilled in copper pot still. Platinum filtered. 43% ABV. Small batch, numbered.</td><td>₹2,000–3,500 / 750ml</td><td>Collectors, premium hotel bars, gifting</td></tr>
+      <tr><td><strong>Aged Mahua (Year 2+)</strong></td><td>12 months in ex-bourbon or new oak barrels. Amber, complex, honey-vanilla notes.</td><td>₹3,500–6,000 / 750ml</td><td>Whisky crossover drinkers, export market</td></tr>
+    </tbody>
+  </table>
+  
+  <div class="callout">
+    <div class="callout-title">🎯 Launch with 1 SKU. Master it. Then expand.</div>
+    <p>Launch with only the Mahua Classic Wine or the White Spirit — not all four at once. A focused launch builds category understanding and conserves capital. Add SKUs once you have distribution and brand awareness established.</p>
+  </div>
+</div>
+
+<!-- SECTION 10: JHARKHAND SALES -->
+<div class="section" id="s10">
+  <div class="section-header">
+    <div class="section-num">10</div>
+    <div class="section-title-block">
+      <div class="section-tag">First Market</div>
+      <div class="section-title">How to Sell in Jharkhand First —<br>Your Home Game Plan</div>
+    </div>
+  </div>
+
+  <h3>The Distribution Reality in Jharkhand</h3>
+  <p>All alcohol retail in Jharkhand flows through <strong>JSBCL (Jharkhand State Beverages Corporation Ltd.)</strong> for state-run outlets, and licensed private retail chains in select districts. You cannot bypass this system. Understanding it and working within it is your first priority.</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="phase-tag">Step 1</div>
+      <div class="phase-title">Get Empanelled with JSBCL</div>
+      <div class="phase-body">
+        <ul>
+          <li>Submit your Distillery License + FSSAI + all other certifications to JSBCL</li>
+          <li>Get your product tested at JSBCL's approved lab</li>
+          <li>Negotiate your ex-factory price — JSBCL sets the retail price on top of this</li>
+          <li>JSBCL supplies to their ~550+ retail outlets across Jharkhand</li>
+          <li>Key contact: JSBCL MD's office in Ranchi</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="phase-tag">Step 2</div>
+      <div class="phase-title">Target Premium On-Trade First</div>
+      <div class="phase-body">
+        <ul>
+          <li>Ranchi: Radisson Blu, Hotel BNR Chanakya, Lemon Tree — approach their F&B managers directly</li>
+          <li>Create a <strong>dedicated Mahua cocktail menu</strong> with the hotel bar — give them recipe cards and training</li>
+          <li>Jamshedpur: Target Club hotels and restaurants near Tata Steel campus</li>
+          <li>Dhanbad: Coal industry executives are regular premium consumers — target premium clubs</li>
+          <li>On-trade bars pay ex-factory price → good margins, high visibility, credibility building</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="phase-tag">Step 3</div>
+      <div class="phase-title">Strategic Gifting Channel</div>
+      <div class="phase-body">
+        <ul>
+          <li>Create custom gifting packages: 2-bottle box with tribal art packaging and brand story card</li>
+          <li>Approach: SAIL, JSPL, Tata Group, DVC, Coal India (all have large Jharkhand presence) for Diwali / New Year corporate gifting</li>
+          <li>One corporate gifting order of 500–1,000 boxes = ₹15–30 lakh revenue in one transaction</li>
+          <li>Position: "Gift India's own heritage. Gift something uniquely Jharkhand."</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="phase-tag">Step 4</div>
+      <div class="phase-title">Tourism & Cultural Events</div>
+      <div class="phase-body">
+        <ul>
+          <li>Get listed in <strong>Jharkhand Tourism</strong> — sell at JTDC (Jharkhand Tourism Development Corp) properties</li>
+          <li>Activate at Jharkhand Mahotsav, tribal art festivals, Sarhul, Karma</li>
+          <li>Sell at Jharkhand Urja Bhavan, government tourism shops — GI products can be sold here</li>
+          <li>Airport retail: Birsa Munda Airport Ranchi — get a small kiosk or inclusion in duty-free</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="phase-tag">Step 5</div>
+      <div class="phase-title">State-Level Advocacy</div>
+      <div class="phase-body">
+        <ul>
+          <li>Meet the <strong>Jharkhand Excise Commissioner</strong> early — position yourself as a state "pride" brand</li>
+          <li>Request the state to reclassify Jharkhand mahua wine as a <strong>heritage tribal product</strong> eligible for reduced excise</li>
+          <li>Lobby through FICCI/CII Jharkhand for mahua to be declared a "state spirit" (like Feni in Goa)</li>
+          <li>Get a write-up in Prabhat Khabar, Dainik Bhaskar Jharkhand editions — political stakeholders read this</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 11: WINE EXPERT GTM -->
+<div class="section" id="s11">
+  <div class="section-header">
+    <div class="section-num">11</div>
+    <div class="section-title-block">
+      <div class="section-tag">Expert Perspective</div>
+      <div class="section-title">From a Wine Industry Expert:<br>Your Complete GTM Playbook</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">🍷 As a Stabilized Wine Industry Expert — Here is My Honest Assessment</div>
+    <p>Having studied how wine categories are built globally — from Champagne to Prosecco to Australian Shiraz to Japanese sake — here is what I would tell you: you have a category-defining opportunity, but also a category-creation burden. No one is doing this at scale yet. That's your moment.</p>
+  </div>
+
+  <h3>What the Global Wine Industry Teaches Us</h3>
+  <ul class="checklist">
+    <li><strong>Category before brand:</strong> Before consumers choose YOUR mahua, they must understand and want "mahua" as a category. Your first ₹1 crore in marketing should be spent building the category, not just your brand. Organize mahua tasting events, publish educational content, host sommeliers. This is how Prosecco overtook Champagne in casual wine drinking.</li>
+    <li><strong>Terroir is your story:</strong> In wine, terroir (sense of place) is everything. Jharkhand's soil, forests, tribal heritage — that IS your terroir. Document it. Photograph it. Name your expressions after specific villages or forest areas ("Khunti Harvest 2025"). This creates collector appeal and price premium.</li>
+    <li><strong>Bartenders are your sales force:</strong> Every successful spirits brand in history — Hendrick's Gin, Patron Tequila, Maker's Mark — broke through by converting bartenders first. Host "Mahua Masterclass" sessions for bartenders in each city you enter. Give them recipes, samples, and storytelling tools. They are the point of conversion for hundreds of consumers per month.</li>
+    <li><strong>Vintage releases create excitement:</strong> Unlike whisky or wine, mahua has a natural vintage structure — each year's harvest is distinct (rainfall, temperature, soil condition). Lean into this. "2025 Khunti Harvest — exceptional monsoon year, extended floral notes." This creates FOMO and supports premium pricing.</li>
+    <li><strong>Quality consistency is your #1 risk:</strong> The biggest failure mode for new craft spirits is batch inconsistency. Invest in laboratory QC equipment, hire a trained winemaster, and do not compromise on this. One bad batch that reaches consumers can destroy two years of brand building.</li>
+    <li><strong>International awards are fast-track credibility:</strong> Enter: IWSC (International Wine & Spirits Competition), San Francisco World Spirits Competition, Decanter World Wine Awards. Even a Silver Medal from any of these creates international credibility and massive domestic PR. Entry fees: ₹15,000–50,000 per category. Worth every rupee.</li>
+    <li><strong>Export as strategy, not aspiration:</strong> UK, USA, and Singapore are the three most important export markets for Indian heritage spirits. The Indian diaspora in these markets is 4+ million people hungry for authentic Indian products. Register with APEDA. Attend ProWine trade fairs. One good UK importer deal can do ₹1–2 Cr in revenue annually.</li>
+  </ul>
+
+  <h3>3-Year GTM Revenue Projection</h3>
+  <table class="styled-table">
+    <thead><tr><th>Year</th><th>Volume (Cases)</th><th>Avg. Ex-Factory/Case</th><th>Gross Revenue</th><th>Focus</th></tr></thead>
+    <tbody>
+      <tr><td>Year 1</td><td>1,500–2,500</td><td>₹3,500</td><td>₹52–88 lakh</td><td>Jharkhand JSBCL + Hotels</td></tr>
+      <tr><td>Year 2</td><td>5,000–8,000</td><td>₹4,500</td><td>₹2.25–3.6 Cr</td><td>+ Odisha, WB, Chhattisgarh + Metros</td></tr>
+      <tr><td>Year 3</td><td>12,000–20,000</td><td>₹5,500</td><td>₹6.6–11 Cr</td><td>+ Delhi, Mumbai, Export pilot</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 12: GLOBAL PLAYERS -->
+<div class="section" id="s12">
+  <div class="section-header">
+    <div class="section-num">12</div>
+    <div class="section-title-block">
+      <div class="section-tag">Benchmarks</div>
+      <div class="section-title">Existing Players &<br>Reference Brands Worldwide</div>
+    </div>
+  </div>
+
+  <h3>Indian Mahua Brands to Study</h3>
+  <div class="brand-grid">
+    <div class="brand-card">
+      <div class="brand-name">DesmondJi</div>
+      <div class="brand-origin">INDIA · Goa · Est. 2018</div>
+      <p class="brand-desc">Founded by Desmond Nazareth — the pioneer who got mahua classified as IMFL. First brand to bring mahua to mainstream Indian urban markets. Available in select states including Goa, Delhi, Maharashtra. Uses proprietary distillation process.</p>
+      <p class="brand-lesson">📌 Key Lesson: How to navigate the IMFL classification process and do national marketing legally.</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">Six Brothers Mahura</div>
+      <div class="brand-origin">INDIA · Maharashtra · Est. 2024</div>
+      <p class="brand-desc">By South Seas Distilleries. India's first luxury mahua spirit. Double-distilled in copper pot stills + platinum filtered. Two expressions: 1922 Resurrection (premium, allocation-only) and Small Batch Original. Featured in Drinks International 2024.</p>
+      <p class="brand-lesson">📌 Key Lesson: Premium packaging + heritage narrative + limited allocation model for luxury positioning.</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">Mah Spirit</div>
+      <div class="brand-origin">INDIA · Maharashtra · Est. 2021</div>
+      <p class="brand-desc">A newer entry focused on craft positioning. More accessible price point. Targets urban cocktail bar market. Has gained traction with mixologists as a cocktail ingredient.</p>
+      <p class="brand-lesson">📌 Key Lesson: Cocktail-bar-first strategy for brand building in urban markets.</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">Mohulo</div>
+      <div class="brand-origin">INDIA · Odisha · Govt. Backed</div>
+      <p class="brand-desc">Name derived from local term for mahua flower. Government-backed Madhya Pradesh + Odisha initiative. Double filtration method. Also innovating beyond alcohol — cold-pressed mahua extract as wellness product. Sold in eco-tourism centres.</p>
+      <p class="brand-lesson">📌 Key Lesson: Non-alcoholic extensions (extracts, teas) as parallel revenue and awareness streams.</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">Mond</div>
+      <div class="brand-origin">INDIA · Madhya Pradesh · Govt.</div>
+      <p class="brand-desc">Madhya Pradesh state government initiative to commercialize local mahua. Focused on domestic tribal market. Not a premium play but demonstrates government support at scale.</p>
+      <p class="brand-lesson">📌 Key Lesson: Government partnership can accelerate distribution significantly in tribal states.</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">Mahua by Rahul Srivastava</div>
+      <div class="brand-origin">FRANCE · Paris · Est. 2021</div>
+      <p class="brand-desc">Launched in Paris in 2021 as a tribute brand. The first mahua brand to break into Western European markets. Proves there is genuine international appetite for the category from non-Indian consumers.</p>
+      <p class="brand-lesson">📌 Key Lesson: Export market viability is real — Western consumers respond to the authentic Indian heritage story.</p>
+    </div>
+  </div>
+
+  <h3>Global Analogue Brands — Study These for Inspiration</h3>
+  <div class="brand-grid">
+    <div class="brand-card">
+      <div class="brand-name">Patrón Tequila</div>
+      <div class="brand-origin">MEXICO · Founded 1989</div>
+      <p class="brand-desc">Took a "peasant drink" (agave distillate) and built a $5B+ global luxury brand. Premium packaging, hand-crafted narrative, bartender relationships, celebrity endorsements. From zero name recognition to the world's most recognised spirits brand.</p>
+      <p class="brand-lesson">📌 Your Mahua Lesson: The exact same playbook. Mahua flower = Agave. Jharkhand = Jalisco.</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">Casamigos</div>
+      <div class="brand-origin">USA/MEXICO · George Clooney · 2013</div>
+      <p class="brand-desc">Built on authentic story + friendship + premium product. Sold to Diageo for $1B in 2017. Proof that a new entrant with a compelling story can capture huge value in a crowded spirits market.</p>
+      <p class="brand-lesson">📌 Your Mahua Lesson: Story + authenticity + premium = acquirable asset. Diageo India is already watching mahua.</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">Feni (Goa) — Multiple Brands</div>
+      <div class="brand-origin">INDIA · Goa</div>
+      <p class="brand-desc">India's only GI-tagged spirit. Started as "dirty local drink." Now served in 5-star hotels globally. Brands like Big Banyan, Cazulo Premium Feni have built premium sub-categories within feni. Feni can now be sold in 4+ states — was once restricted to Goa only.</p>
+      <p class="brand-lesson">📌 Your Mahua Lesson: Closest Indian analogue. This is exactly where mahua is headed. Be the first mover.</p>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">Mezcal (Oaxaca, Mexico)</div>
+      <div class="brand-origin">MEXICO · Various producers</div>
+      <p class="brand-desc">Born out of indigenous tradition. Now a $1B+ category growing 20% annually. Built on terroir, craft, tribal/indigenous producer story, sustainability. Extremely direct parallel to Mahua's potential trajectory.</p>
+      <p class="brand-lesson">📌 Your Mahua Lesson: Indigenous + craft + sustainability = global premium category. This trajectory is proven.</p>
+    </div>
+  </div>
+
+  <h3>Industry Bodies & Resources</h3>
+  <ul class="checklist">
+    <li><strong>CIABC (Confederation of Indian Alcoholic Beverage Companies):</strong> India's primary alcohol industry body. Membership gives you policy access, trade events, and peer networking — ciabc.in</li>
+    <li><strong>APEDA (Agricultural & Processed Food Products Export Development Authority):</strong> Government body that supports food and beverage exports. Free registration. Provides export market intelligence and buyer connection — apeda.gov.in</li>
+    <li><strong>IWSC (International Wine & Spirits Competition):</strong> The most prestigious global spirits competition. A gold medal here is a brand-transforming event — iwsc.net</li>
+    <li><strong>Drinks International:</strong> Global trade publication that already covered mahua. Build a relationship with their editors — getting featured here is invaluable for export credibility — drinksint.com</li>
+    <li><strong>Project Mahua (projectmahua.com):</strong> An independent research and advocacy platform tracking the mahua category. A great place to stay updated on policy, brands, and market developments.</li>
+    <li><strong>TRIFED (Tribal Cooperative Marketing Development Federation):</strong> Government body supporting tribal forest produce enterprises. Should be one of your first meetings — trifed.nic.in</li>
+  </ul>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <strong>Mahua Wine Business Roadmap — Jharkhand</strong><br>
+    Prepared as a comprehensive go-to-market strategic guide · 2025
+  </div>
+  <div style="text-align:right;">
+    <strong>Next Step:</strong> Hire an excise lawyer + commission your DPR<br>
+    Every day of delay = one day closer to a competitor entering your space
+  </div>
+</footer>
+
+</body>
+</html>
