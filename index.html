@@ -572,20 +572,108 @@
     width: 4px; height: 4px; border-radius: 50%;
     background: rgba(200,134,10,0.3);
   }
+
+  /* ─── MOBILE RESPONSIVE ─────────────────────────── */
+  @media (max-width: 768px) {
+
+    /* TOP BAR */
+    #topbar {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      padding: 12px 20px !important;
+      gap: 10px !important;
+    }
+    #topbar-credit { flex-wrap: wrap; gap: 6px; }
+    #topbar-lang { align-self: flex-end; }
+
+    /* HERO */
+    .hero {
+      padding: 48px 20px 40px;
+    }
+    .hero::after { display: none; }
+    .hero-somvana { display: none; }
+    .hero h1 { font-size: 38px; }
+    .hero-meta { gap: 20px; }
+    .meta-value { font-size: 18px; }
+
+    /* TOC */
+    .toc { padding: 20px; gap: 6px; }
+
+    /* SECTIONS */
+    .section { padding: 40px 20px; }
+    .section-num { font-size: 50px; }
+    .section-title { font-size: 26px; }
+
+    /* CARDS */
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+    .brand-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* TABLES — horizontal scroll */
+    .styled-table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+    }
+
+    /* PROCESS STEPS */
+    .process-steps {
+      grid-template-columns: 1fr;
+    }
+    .process-step {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+    .process-step:last-child { border-bottom: none; }
+
+    /* CAPITAL TOTAL */
+    .capital-total {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 20px;
+    }
+    .capital-amount { font-size: 28px; }
+
+    /* FOOTER */
+    footer {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: left;
+    }
+    footer div:last-child { text-align: left; }
+
+    /* TIMELINE */
+    .timeline { padding-left: 22px; }
+    .timeline-item::before { left: -29px; }
+
+    /* TWO COL */
+    .two-col { grid-template-columns: 1fr; }
+
+    /* CALLOUT */
+    .callout { padding: 20px; }
+
+    /* H3 */
+    h3 { font-size: 19px; }
+  }
 </style>
 </head>
 <body>
 
 <!-- TOP BAR: CREDIT + LANG TOGGLE -->
-<div style="background:#0E1A12; padding:10px 60px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; border-bottom:1px solid rgba(200,134,10,0.15);">
-  <div style="display:flex; align-items:center; gap:10px;">
+<div id="topbar" style="background:#0E1A12; padding:10px 60px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; border-bottom:1px solid rgba(200,134,10,0.15);">
+  <div id="topbar-credit" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
     <div class="credit-dot"></div>
     <span class="credit-line" id="credit-by" style="color:rgba(247,240,227,0.4); font-family:'DM Mono',monospace; font-size:10px; letter-spacing:2px; text-transform:uppercase;">Created by</span>
     <span class="credit-name" style="font-family:'Cormorant Garamond',serif; font-size:17px; font-style:italic; color:#C8860A; letter-spacing:1px;">Rahul Sharma</span>
     <div class="credit-dot"></div>
     <span class="credit-line" id="credit-year" style="color:rgba(247,240,227,0.3); font-family:'DM Mono',monospace; font-size:10px; letter-spacing:2px; text-transform:uppercase;">© 2025 · All Rights Reserved</span>
   </div>
-  <div style="display:flex; align-items:center; gap:10px;">
+  <div id="topbar-lang" style="display:flex; align-items:center; gap:10px;">
     <span class="lang-bar-label" style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:2px; text-transform:uppercase; color:rgba(247,240,227,0.4);">भाषा / Language</span>
     <div class="lang-toggle">
       <button class="lang-btn active" id="btn-en" onclick="setLang('en')">English</button>
@@ -608,10 +696,7 @@
       <div class="meta-label">Target Market</div>
       <div class="meta-value">India + Export</div>
     </div>
-    <div class="meta-item">
-      <div class="meta-label">Capital Range</div>
-      <div class="meta-value">₹6 – 12 Cr</div>
-    </div>
+
     <div class="meta-item">
       <div class="meta-label">Timeline to Launch</div>
       <div class="meta-value">12 – 18 Months</div>
@@ -1476,9 +1561,7 @@
   </div>
 </footer>
 
-
-</body>
-</html>
+<script>
 const translations = {
   en: {
     'page-title': 'Mahua Wine Business Roadmap — Jharkhand',
